@@ -1,61 +1,28 @@
-# 🔐 Microsoft Entra ID (Azure AD) IAM Labs
+# Entra ID Labs – Microsoft IAM Portfolio
 
-Hands-on Microsoft Entra ID labs demonstrating Identity and Access Management (IAM) concepts including:
+Hands-on Microsoft Entra ID (Azure AD) labs demonstrating real-world IAM concepts.
 
-- User lifecycle management
-- Security group configuration
-- Role-based access control (RBAC)
-- Multi-Factor Authentication (MFA)
-- Conditional Access policies
-- Password management
-- Identity security best practices
-
----
-
-## 🧪 Lab Structure
+## Labs Included
 
 ### 👤 User Management
-Demonstrates manual user creation and identity configuration.
-
-📂 `user-management/`
-
-- Create new user
-- Configure password policies
-- Verify user in directory
-- Identity provisioning process
-
----
+- User creation
+- Password policies
+- Account lifecycle management
 
 ### 👥 Security Group Management
-Demonstrates access control using security groups.
+- Security group creation
+- Membership assignment
+- Access control demonstration
 
-📂 `group-management/`
-
-- Create security group
-- Assign users to group
-- Verify group membership
-- Demonstrate access control foundation
-
----
-
-## 🛠 Tools Used
-
-- Microsoft Entra ID (Azure AD)
-- Microsoft Entra Admin Center
-- GitHub for documentation
-- Screenshot evidence for lab validation
+### 🔐 Role-Based Access Control (RBAC)
+- Administrative role assignment
+- Privileged access configuration
+- Principle of least privilege
 
 ---
 
-## 🎯 Objective
-
-Build practical IAM experience aligned with real-world enterprise identity administration and security operations.
-
----
-
-More labs coming:
-
-- 🔑 Role Assignment (RBAC)
-- 🔐 Conditional Access
-- 🔒 Multi-Factor Authentication
-- 🔄 Self-Service Password Reset (SSPR)
+## Technologies Used
+- Microsoft Entra ID
+- Azure AD Built-in Roles
+- RBAC
+- Identity and Access Management (IAM)
