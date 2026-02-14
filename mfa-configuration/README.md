@@ -35,10 +35,10 @@ Demonstrate identity protection by enabling and enforcing Multi-Factor Authentic
 ## MFA Configuration Screenshots
 
 ### Password Reset Confirmation
-![Password Reset Confirmation](screenshots/Password-reset-confirmation.png)
+![Password Reset Confirmation](screenshot/Password-reset-confirmation.png)
 
 ### MFA Enabled
-![MFA Enabled](screenshots/MFA-Enabled.png)
+![MFA Enabled](screenshot/MFA-Enabled.png)
 
 ### MFA Status Enforced
-![MFA Status Enforced](screenshots/MFA-Satus-Enforced.png)
+![MFA Status Enforced](screenshot/MFA-Satus-Enforced.png)
