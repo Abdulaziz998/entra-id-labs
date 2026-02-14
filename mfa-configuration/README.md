@@ -11,16 +11,16 @@ Demonstrate identity protection by enabling and enforcing Multi-Factor Authentic
 - Reset test user password
 - Enabled per-user MFA
 - Enforced MFA registration
-- Verified MFA setup via login test
+- Verified MFA status as Enforced
 
 ---
 
 ## Skills Demonstrated
 
-- Identity Security
-- Authentication Hardening
+- Identity Security Hardening
+- Multi-Factor Authentication Configuration
 - Microsoft Entra ID Administration
-- User Lifecycle Security Controls
+- Authentication Policy Enforcement
 
 ---
 
@@ -28,20 +28,17 @@ Demonstrate identity protection by enabling and enforcing Multi-Factor Authentic
 
 - Microsoft Entra ID Admin Center
 - Per-User MFA Configuration
-- Microsoft Authenticator App
+- Password Reset Workflow
 
 ---
 
 ## MFA Configuration Screenshots
 
-### Password Reset
-![Password Reset](screenshots/password-reset.png)
+### Password Reset Confirmation
+![Password Reset Confirmation](screenshots/Password-reset-confirmation.png)
 
 ### MFA Enabled
-![MFA Enabled](screenshots/mfa-enabled.png)
+![MFA Enabled](screenshots/MFA-Enabled.png)
 
-### MFA Enforced
-![MFA Enforced](screenshots/mfa-enforced.png)
-
-### MFA Registration Prompt
-![MFA Registration](screenshots/mfa-registration.png)
+### MFA Status Enforced
+![MFA Status Enforced](screenshots/MFA-Satus-Enforced.png)
