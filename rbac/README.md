@@ -27,7 +27,7 @@ A test IAM user requires elevated permissions to manage enterprise applications.
 ## RBAC Screenshots
 
 ### Role Selected – Application Administrator
-![Role Selected](screenshots/role-selected.png)
+![Role Selected](screenshots/Role-page.png)
 
 ### Add Assignment Screen
 ![Add Assignment](screenshots/add-assignment.png)
