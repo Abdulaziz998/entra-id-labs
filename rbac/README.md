@@ -30,7 +30,7 @@ A test IAM user requires elevated permissions to manage enterprise applications.
 ![Role Selected](screenshots/Role-page.png)
 
 ### Add Assignment Screen
-![Add Assignment](screenshots/add-assignment.png)
+![Add Assignment](screenshots/Add-assignment.png)
 
 ### Role Successfully Assigned
-![Role Assigned](screenshots/role-assigned.png)
+![Role Assigned](screenshots/user-assigned-to-role.png)
