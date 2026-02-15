@@ -46,7 +46,17 @@ Hands-on Microsoft Entra ID labs demonstrating identity lifecycle management, ac
 
 ---
 
-### 5️⃣ Sign-In Log Monitoring
+### 5️⃣ Authentication Methods Configuration
+- Configured authentication method policies
+- Enabled Microsoft Authenticator for users
+- Verified authentication method targeting
+- Prepared tenant for secure MFA registration
+
+📁 Folder: authentication-methods/
+
+---
+
+### 6️⃣ Sign-In Log Monitoring
 - Monitored user authentication activity
 - Filtered sign-in logs by specific user
 - Analyzed authentication details (IP, application, status)
@@ -58,14 +68,25 @@ Hands-on Microsoft Entra ID labs demonstrating identity lifecycle management, ac
 
 ## Skills Demonstrated
 
-- Identity and Access Management (IAM)
+Identity and Access Management (IAM):
+
 - Microsoft Entra ID Administration
 - User Lifecycle Management
+- Security Group Management
 - Role-Based Access Control (RBAC)
+
+Identity Security:
+
 - Multi-Factor Authentication (MFA)
-- Identity Monitoring and Security Auditing
+- Authentication Methods Configuration
+- Authentication Security Hardening
 - Access Control and Privilege Management
-- Authentication Security
+
+Monitoring and Auditing:
+
+- Identity Monitoring and Security Auditing
+- Sign-In Log Analysis
+- Authentication Activity Investigation
 
 ---
 
@@ -74,9 +95,16 @@ Hands-on Microsoft Entra ID labs demonstrating identity lifecycle management, ac
 - Microsoft Entra ID (Azure Active Directory)
 - Azure Portal
 - Microsoft Entra Admin Center
+- GitHub
 
 ---
 
 ## Purpose
 
-This repository demonstrates hands-on IAM experience using Microsoft Entra ID, simulating real-world enterprise identity administration and security tasks relevant to IAM Engineer, Cloud Engineer, and Identity Security roles.
+This repository demonstrates hands-on IAM experience using Microsoft Entra ID, simulating real-world enterprise identity administration and security tasks relevant to:
+
+- IAM Engineer
+- Cloud Engineer
+- Azure Administrator
+- Identity Security Engineer
+- SOC Analyst
