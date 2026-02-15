@@ -1,87 +1,124 @@
 # Lab 7 — Enterprise Application Registration (App Registration & Service Principal)
 
+---
+
 ## Objective
 
-Demonstrate how to register an application in Microsoft Entra ID and verify the associated Enterprise Application (Service Principal) used for authentication and access control.
+Demonstrate how to register an application in Microsoft Entra ID and verify the associated Enterprise Application (Service Principal) used for authentication, access control, and IAM integrations.
+
+This simulates real-world IAM tasks such as:
+
+- Application identity creation
+- Service principal management
+- OAuth identity configuration
+- Enterprise application access assignment
 
 ---
 
-## Actions Performed
+## Step 1 — Register Application
 
-### Step 1 — Register Application
-Created a new application registration:
+Created a new application registration in Microsoft Entra ID.
 
-Name: IAM-Lab-App  
-Supported account types: Single tenant  
+Configuration:
+
+- Name: IAM-Lab-App  
+- Supported account types: Single tenant (Default Directory)
 
 Screenshot:
-screenshots/app-registration-form.png
+
+![App Registration Form](screenshots/app-registration-form.png)
 
 ---
 
-### Step 2 — Verify Application Registration
+## Step 2 — Verify Application Registration
 
-Verified application identity details:
+Verified application identity was successfully created.
 
-• Application ID  
-• Object ID  
-• Tenant ID  
-• Application status  
+Verified:
+
+- Application (Client) ID
+- Object ID
+- Tenant ID
+- Application status: Active
 
 Screenshot:
-screenshots/app-registration-overview.png
+
+![App Registration Overview](screenshots/app-registration-overview.png)
 
 ---
 
-### Step 3 — Verify Enterprise Application Creation
+## Step 3 — Verify Enterprise Application (Service Principal)
 
-Confirmed Enterprise Application (Service Principal) was automatically created.
+Confirmed Microsoft Entra automatically created an Enterprise Application (Service Principal).
+
+This service principal represents the application identity inside the tenant.
+
+Verified:
+
+- Enterprise application exists
+- Application name matches registration
+- Object ID assigned
+- Application available for access assignment
 
 Screenshot:
-screenshots/enterprise-app-list.png
+
+![Enterprise Application List](screenshots/enterprise-application-users-and-groups.png)
 
 ---
 
-### Step 4 — Assign User to Enterprise Application
+## Step 4 — Assign User to Enterprise Application
+
+Assigned user access to the Enterprise Application.
 
 Assigned user:
 
-IAM-Test-User1iam.test1
+- IAM-Test-User1iam.test1
 
-Verified user assignment successfully.
+Role assigned:
+
+- Default Access
+
+This simulates granting application access to users in enterprise environments.
 
 Screenshot:
-screenshots/enterprise-app-user-assigned.png
+
+![Enterprise Application User Assignment](screenshots/enterprise-app-user-assigned.png)
 
 ---
 
-## What This Demonstrates
+## What was created automatically
 
-• Application identity creation  
-• Service Principal creation  
-• Identity-to-application trust relationship  
-• Access assignment to applications  
+When registering the application, Microsoft Entra created two identities:
 
----
-
-## IAM Concepts Demonstrated
-
-• App Registration  
-• Enterprise Applications  
-• Service Principals  
-• Identity-based access to applications  
-• Microsoft Entra ID application authentication
+| Identity Type | Purpose |
+|--------------|---------|
+| App Registration | Defines the application identity configuration |
+| Enterprise Application (Service Principal) | Represents the application inside the tenant for authentication and access control |
 
 ---
 
-## Real-World Use Cases
+## Skills Demonstrated
 
-This is used for:
+- Application Registration
+- Service Principal Management
+- Enterprise Application Configuration
+- Identity Access Assignment
+- IAM Application Integration
+- OAuth Application Identity Setup
+- Microsoft Entra ID Identity Architecture
 
-• Single Sign-On (SSO)
-• Azure integrations
-• OAuth authentication
-• API authentication
-• Service accounts
-• Automation
-• Enterprise IAM architecture
+---
+
+## IAM Real-World Relevance
+
+This lab simulates real IAM engineer tasks such as:
+
+- Integrating applications with Microsoft Entra ID
+- Managing service principals
+- Assigning users to applications
+- Configuring identity-based authentication
+- Preparing applications for SSO, automation, and API access
+
+---
+
+## Folder Structure
