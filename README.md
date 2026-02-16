@@ -1,6 +1,6 @@
 # Microsoft Entra ID (Azure AD) IAM Labs
 
-Hands-on Microsoft Entra ID labs demonstrating identity lifecycle management, access control, RBAC, MFA, authentication security, application identity, and identity monitoring.
+Hands-on Microsoft Entra ID labs demonstrating identity lifecycle management, access control, RBAC, MFA, authentication security, application identity, API authorization, and identity monitoring.
 
 ---
 
@@ -77,6 +77,17 @@ Hands-on Microsoft Entra ID labs demonstrating identity lifecycle management, ac
 
 ---
 
+### 8️⃣ Microsoft Graph API Permissions Configuration
+- Configured Microsoft Graph API permissions for application identity
+- Added Delegated permissions for Microsoft Graph
+- Assigned Directory.Read.All permission
+- Verified application authorization to read directory data
+- Demonstrated OAuth-based identity access configuration
+
+📁 Folder: api-permissions/
+
+---
+
 ## Skills Demonstrated
 
 ### Identity and Access Management (IAM)
@@ -88,6 +99,7 @@ Hands-on Microsoft Entra ID labs demonstrating identity lifecycle management, ac
 - Application Identity Management
 - Service Principal Management
 - Enterprise Application Access Control
+- API Authorization and Access Management
 
 ---
 
@@ -97,6 +109,7 @@ Hands-on Microsoft Entra ID labs demonstrating identity lifecycle management, ac
 - Authentication Methods Configuration
 - Authentication Security Hardening
 - Privileged Access Management
+- Identity-based Access Control
 
 ---
 
@@ -106,6 +119,8 @@ Hands-on Microsoft Entra ID labs demonstrating identity lifecycle management, ac
 - Service Principal Creation
 - Enterprise Application Configuration
 - Application Access Assignment
+- Microsoft Graph API Permissions
+- OAuth Permission Model
 - Identity-based Authentication
 
 ---
@@ -116,6 +131,7 @@ Hands-on Microsoft Entra ID labs demonstrating identity lifecycle management, ac
 - Sign-In Log Analysis
 - Authentication Activity Investigation
 - Identity Threat Visibility
+- Application Access Visibility
 
 ---
 
@@ -124,13 +140,14 @@ Hands-on Microsoft Entra ID labs demonstrating identity lifecycle management, ac
 - Microsoft Entra ID (Azure Active Directory)
 - Microsoft Entra Admin Center
 - Azure Portal
+- Microsoft Graph API
 - GitHub
 
 ---
 
 ## Purpose
 
-This repository demonstrates real-world IAM engineering skills using Microsoft Entra ID, simulating enterprise identity administration, application integration, and access control scenarios.
+This repository demonstrates real-world IAM engineering skills using Microsoft Entra ID, simulating enterprise identity administration, application integration, API authorization, and access control scenarios.
 
 These labs align with responsibilities of:
 
@@ -153,18 +170,20 @@ Completed:
 - Authentication methods hardening
 - Identity monitoring and auditing
 - Enterprise application identity management
+- Application API authorization and Microsoft Graph integration
 
 ---
 
 ## Upcoming Advanced Labs
 
-- App API Permissions & OAuth Configuration
-- Service Principal Secrets & Certificates
+- Service Principal Secrets & Certificates 🔐
 - Privileged Identity Management (PIM)
 - Conditional Access Policies
 - Access Reviews
 - Identity Governance
 - Automated Identity Provisioning
+- SCIM Provisioning
+- OAuth Token Inspection
 
 ---
 
