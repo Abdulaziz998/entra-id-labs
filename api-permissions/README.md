@@ -2,45 +2,47 @@
 
 ## Objective
 
-Demonstrate how to configure Microsoft Graph API permissions for an application in Microsoft Entra ID to allow secure access to directory and user data.
+Demonstrate how to configure Microsoft Graph API permissions for an application in Microsoft Entra ID.
 
-This simulates real-world IAM scenarios where applications require controlled access to identity resources.
+This lab simulates real-world IAM Engineer tasks involving:
 
----
-
-## What is Microsoft Graph?
-
-Microsoft Graph is the primary API used to access:
-
-• Users  
-• Groups  
-• Directory data  
-• Applications  
-• Authentication data  
-
-It is heavily used in:
-
-• IAM automation  
-• Identity governance  
-• Azure integrations  
-• Enterprise applications  
-• Security tools  
+- Application authorization
+- Identity directory access configuration
+- Microsoft Graph integration
+- Delegated permission assignment
 
 ---
 
-## Step 1 — View Existing API Permissions
+## Overview
+
+API permissions allow applications to securely access identity data in Microsoft Entra ID through Microsoft Graph.
+
+These permissions control what an application can read or modify within the identity directory.
+
+This is commonly used for:
+
+- IAM automation
+- Identity governance tools
+- Enterprise applications
+- Authentication integrations
+- Cloud security tools
+
+---
+
+## Step 1 — Open API Permissions
 
 Navigated to:
 
-Entra ID → App registrations → IAM-Lab-App → API permissions
+Microsoft Entra ID  
+→ App registrations  
+→ IAM-Lab-App  
+→ API permissions  
 
-Verified default permission:
-
-• User.Read (Delegated)
+Verified existing permissions configuration.
 
 Screenshot:
 
-screenshots/api-permissions-overview.png
+![API Permissions Overview](screenshots/api-permissions-overview.png)
 
 ---
 
@@ -48,11 +50,14 @@ screenshots/api-permissions-overview.png
 
 Clicked:
 
-Add a permission → Microsoft Graph
+Add a permission  
+→ Microsoft Graph  
+
+This allows the application to access identity resources.
 
 Screenshot:
 
-screenshots/add-permission.png
+![Add Permission](screenshots/add-permission.png)
 
 ---
 
@@ -62,79 +67,128 @@ Selected:
 
 Delegated permissions
 
-This allows the application to act on behalf of a signed-in user.
+Delegated permissions allow the application to access resources on behalf of the signed-in user.
 
 Screenshot:
 
-screenshots/delegated-permissions-selected.png
+![Delegated Permissions Selected](screenshots/delegated-permissions-selected.png)
 
 ---
 
-## Step 4 — Add Directory.Read.All Permission
+## Step 4 — Select Directory.Read.All Permission
 
 Selected permission:
 
 Directory.Read.All
 
-Description:
+This permission allows the application to read directory data, including:
 
-Allows application to read directory data including:
+- Users
+- Groups
+- Roles
+- Identity objects
 
-• Users  
-• Groups  
-• Roles  
-• Applications  
-
-Screenshot:
-
-screenshots/directory-read-all-selected.png
-
----
-
-## Step 5 — Verify Permission Added
-
-Confirmed Microsoft Graph permissions now include:
-
-• User.Read  
-• Directory.Read.All
+This is commonly required in IAM and identity monitoring systems.
 
 Screenshot:
 
-screenshots/permissions-added.png
+![Directory.Read.All Selected](screenshots/directory-read-all-selected.png)
 
 ---
 
-## Security Note
+## Step 5 — Add Permission to Application
 
-Directory.Read.All requires admin consent because it grants access to sensitive directory information.
+Clicked:
 
-This permission is commonly used in:
+Add permissions
 
-• IAM tools  
-• Automation scripts  
-• Identity reporting tools  
-• Security monitoring systems  
+Permission successfully added to the application.
+
+Screenshot:
+
+![Permissions Added](screenshots/permissions-added.png)
+
+---
+
+## Step 6 — Verify Configured Permissions
+
+Verified application now has:
+
+- User.Read
+- Directory.Read.All
+
+This confirms the application can access identity directory data.
+
+Screenshot:
+
+![Configured Permissions Overview](screenshots/api-permissions-overview.png)
+
+---
+
+## Permission Types Explained
+
+### Delegated Permissions
+
+Used when:
+
+- A user is signed in
+- Application acts on behalf of the user
+
+### Application Permissions
+
+Used when:
+
+- No user is signed in
+- Application runs as a background service
+
+This lab used Delegated Permissions.
+
+---
+
+## Security Importance
+
+API permissions must be carefully controlled because they allow applications to access identity data.
+
+Proper configuration helps prevent:
+
+- Unauthorized identity access
+- Privilege escalation
+- Identity data exposure
+
+This is a critical IAM responsibility.
 
 ---
 
 ## Skills Demonstrated
 
-• Microsoft Graph API integration  
-• Application identity configuration  
-• Delegated permissions management  
-• Enterprise IAM configuration  
-• Azure application security  
+Identity and Access Management:
+
+- Microsoft Entra ID Application Management
+- Microsoft Graph API Integration
+- API Permission Configuration
+- Directory Access Control
+
+Cloud Security:
+
+- OAuth permission model
+- Delegated access configuration
+- Identity platform security
+
+IAM Engineering:
+
+- Application authorization
+- Identity integration configuration
+- Enterprise identity access control
 
 ---
 
-## Real-World Use Case
+## Tools Used
 
-IAM engineers configure API permissions for:
+- Microsoft Entra ID
+- Microsoft Graph API
+- Azure Portal
+- GitHub
 
-• Automation tools  
-• Identity governance systems  
-• Azure applications  
-• SSO integrations  
-• Security monitoring tools  
+---
 
-This lab simulates production IAM application configuration.
+## Folder Structure
